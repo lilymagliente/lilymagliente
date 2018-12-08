@@ -1056,11 +1056,11 @@ Wizards_shooting_stats<-Wizards_shooting_stats[-nrow(Wizards_shooting_stats),]
 ######### Create three main data tables and save them as a csv
 
 Roster <- rbind(Hawks_roster, Celtics_roster, Nets_roster, Hornets_roster, Bulls_roster, Cavaliers_roster, Mavericks_roster, Nuggets_roster, Pistons_roster, Warriors_roster, Rockets_roster, Pacers_roster, Clippers_roster, Lakers_roster, Grizzlies_roster, Heat_roster, Bucks_roster, Timberwolves_roster, Pelicans_roster, Knicks_roster, Thunder_roster, Magic_roster, Seventysixers_roster, Trailblazers_roster, Kings_roster, Spurs_roster, Raptors_roster, Jazz_roster, Wizards_roster)
-#fwrite(Roster, "Roster.csv")
+fwrite(Roster, "Roster.csv")
 Shooting_stats<- rbind(Hawks_shooting_stats, Celtics_shooting_stats, Nets_shooting_stats, Bulls_shooting_stats, Cavaliers_shooting_stats, Mavericks_shooting_stats, Nuggets_shooting_stats, Pistons_shooting_stats, Warriors_shooting_stats, Rockets_shooting_stats, Pacers_shooting_stats, Clippers_shooting_stats, Lakers_shooting_stats, Grizzlies_shooting_stats, Heat_shooting_stats, Bucks_shooting_stats, Timberwolves_shooting_stats, Pelicans_shooting_stats, Knicks_shooting_stats, Thunder_shooting_stats, Magic_shooting_stats ,Seventysixers_shooting_stats, Suns_shooting_stats, Trailblazers_shooting_stats,Kings_shooting_stats, Spurs_shooting_stats, Raptors_shooting_stats, Jazz_shooting_stats, Wizards_shooting_stats)
-#fwrite(Shooting_stats, "Shooting_stats.csv")
+fwrite(Shooting_stats, "Shooting_stats.csv")
 Game_stats<- rbind(Hawks_game_stats, Celtics_game_stats, Nets_game_stats, Bulls_game_stats, Cavaliers_game_stats, Mavericks_game_stats, Nuggets_game_stats, Pistons_game_stats, Warriors_game_stats, Rockets_game_stats, Pacers_game_stats, Clippers_game_stats, Lakers_game_stats, Grizzlies_game_stats, Heat_game_stats, Bucks_game_stats, Timberwolves_game_stats, Pelicans_game_stats, Knicks_game_stats, Thunder_game_stats, Magic_game_stats ,Seventysixers_game_stats, Suns_game_stats, Trailblazers_game_stats,Kings_game_stats, Spurs_game_stats, Raptors_game_stats, Jazz_game_stats, Wizards_game_stats)
-#fwrite(Game_stats, "Game_Stats.csv")
+fwrite(Game_stats, "Game_Stats.csv")
 
 ######### Clean up the data. Make columns numerical with only numerical characters and rename column names
 
